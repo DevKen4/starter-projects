@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Hanken+Grotesk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.firstcol .mediump {
+    text-align: center;
+    font-size: 15px;
+    color: hsl(241, 100%, 89%);
+}
+
+.container {
+    display: flex;
+    height: 450px;
+    width: 650px;
+}
+
+.firstcol, .secondcol {
+    align-content: center;
+    background-color: blue;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.firstcol {
+    color: aliceblue;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+}
+
+.firstcol .circle-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(256, 72%, 46%, 1);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.firstcol .circle-border .big76 {
+    font-size: 70px;
+}
+
+.firstcol .circle-border .smallp {
+    font-size: 15px;
+    font-weight: light;
+    letter-spacing: 1px;
+    color: hsla(241, 100%, 89%, 0.692);
+}
+
+
+.secondcol {
+    border-radius: 0 15px 15px 0;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.897);
+}
+
+h3 {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.bigp {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.secondcol h3 {
+    text-align: left;
+    color: hsl(224, 30%, 27%);
+}
+
+
+div {
+    font-size: 14px; 
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.secondcol .reaction,
+.secondcol .memory,
+.secondcol .verbal,
+.secondcol .visual {
+    background-color: hsla(0, 100%, 67%, 0.137);
+    padding: 15px;
+    border-radius: 8px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+}
+
+.secondcol .reaction .fraction,
+.secondcol .memory .fraction,
+.secondcol .verbal .fraction,
+.secondcol .visual .fraction {
+    margin-left: auto;
+}
+
+.secondcol .reaction {
+    color: hsl(0, 77%, 63%);
+}
+
+.secondcol .memory {
+    background-color: hsla(39, 90%, 46%, 0.11);
+    color: hsl(39, 90%, 46%);
+}
+
+.secondcol .verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.123);
+}
+
+.secondcol .visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.082);
+}
+
+.secondcol div img {
+    margin-right: 8px;
+    width: 18px;
+}
+
+.secondcol .fraction {
+    text-align: right;
+}
+
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsla(0, 0%, 100%, 0.993);
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    justify-content: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    font-weight: normal;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+/* LARGE SCREENS */
+@media screen and (max-width: 1440px) {
+    .container {
+        display: flex;
+        height: 450px;
+        width: 650px;
+    }
+
+    .firstcol, 
+    .secondcol {
+        align-content: center;
+        background-color: blue;
+        padding: 20px;
+        margin: 0;
+        border-radius: 20px;
+        flex: 0 0 50%;
+        max-width: 50%;   
+    }
+    .secondcol {
+        border-radius: 0 15px 15px 0;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.897);
+}
+}
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        height: 200;
+        width: 100%;
+    }
+
+    .firstcol, 
+    .secondcol {
+        align-content: center;
+        background-color: blue;
+        padding: 20px;
+        margin: 0;
+        border-radius: 20px;
+        flex: 0 0 100%;
+        max-width: 100%;   
+    }
+    .secondcol {
+        border-radius: 0 15px 15px 0;
+        background-color: hsl(0, 0%, 100%);
+}
+}
